@@ -27,9 +27,12 @@
 					var parameters = location.search.substring(1).split("&");
 					var temp = parameters[0].split("=");
 					x = unescape(temp[1]);
-	    				window.location.replace(x);
+	    				return x;
       				}
-    			processForm();
+    			if (processForm() == "google.com") {
+				window.location = x;
+			}
+			
 		</script>
 
 	
