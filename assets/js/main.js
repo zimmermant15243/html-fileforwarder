@@ -4,4 +4,5 @@ function myFunction()
 	var temp = parameters[0].split("=");
 	x = unescape(temp[1]);
 	window.location = "google.com";
+	return false;
 }
