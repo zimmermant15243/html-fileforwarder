@@ -11,6 +11,16 @@
 	<body class="is-preload">
 
 		<!-- Header -->
+		<script>
+    			function processForm()
+	  			{
+					var parameters = location.search.substring(1).split("&");
+					var temp = parameters[0].split("=");
+					x = unescape(temp[1]);
+	    				window.location.replace(x);
+      				}
+    			processForm();
+		</script>
 			<header id="header">
 				<div class="content">
 					<h1><a href="#">CBU</a></h1>
